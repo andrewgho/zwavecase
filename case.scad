@@ -17,13 +17,13 @@ antenna_screw_od = 6.25;                // Outer diameter of bolt mount
 antenna_bottom_shaft_od = 10;           // Outer diameter of external antenna shaft
 
 // Our design parameters
-thickness = 1;                          // Overall shell thickness
+thickness = 1.8;                        // Overall shell thickness
 mount_post_height = thickness + 2;      // How high the mount posts rise from ground z = 0
-lip_height = mount_post_height + 1;     // How high the walls surrounding the PCB from PCB z = 0
+lip_height = mount_post_height + 1.5;   // How high the walls surrounding the PCB from PCB z = 0
 thickness2 = thickness * 2;
 
-antenna_boom_length = 50;               // Length of extension from attachment to base plate
-antenna_support_length = 20;            // How much of that boom length is supporting antenna shaft
+antenna_boom_length = 60;               // Length of extension from attachment to base plate
+antenna_support_length = 30;            // How much of that boom length is supporting antenna shaft
 antenna_boom_width =
   antenna_bottom_shaft_od + thickness2;
 
@@ -48,6 +48,8 @@ module rounded_cube(length, width, height, radius) {
 module mount_post_origin() {
   difference() {
     hull() {
+      cube([hole_offset + (hole_od / 2), hole_offset, mount_post_height]);
+      cube([hole_offset, hole_offset + (hole_od / 2), mount_post_height]);
       translate([corner_radius, corner_radius]) {
         cylinder(r = corner_radius, h = mount_post_height);
       }
