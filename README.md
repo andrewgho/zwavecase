@@ -8,8 +8,12 @@ and keeps the Raspberry Pi stable on a flat surface.
 
 ![Image of Raspberry Pi 4 B+ with Razpberry 7 Pro mounted](case.jpg)
 
+The case should be snap-fit, but you can also use (short) M2.5 screws if you
+want a more permanent attachment.
+
 The repository includes OpenSCAD source (warning: pretty messy) and a printable
-STL. It also includes a PrusaSlicer G-code for PETG.
+STL. It also includes a PrusaSlicer G-code for PETG for the Prusa Mini, which
+happens to be the printer I own.
 
 License
 -------
