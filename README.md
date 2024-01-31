@@ -6,7 +6,7 @@ the [RaZberry 7 Pro](https://z-wave.me/products/razberry/) Z-wave shield which
 comes with an integrated antenna. The case holds the antenna out from the body
 and keeps the Raspberry Pi stable on a flat surface.
 
-[Image of Raspberry Pi 4 B+ with Razpberry 7 Pro mounted](case.jpg)
+![Image of Raspberry Pi 4 B+ with Razpberry 7 Pro mounted](case.jpg)
 
 The repository includes OpenSCAD source (warning: pretty messy) and a printable
 STL. It also includes a PrusaSlicer G-code for PETG.
